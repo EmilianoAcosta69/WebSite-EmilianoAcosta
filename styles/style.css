@@ -276,6 +276,7 @@ body{
     margin: 10px;
     outline: none;
     border: none;
+    resize: none;
 }
 
 .sectionContacto div form button{
