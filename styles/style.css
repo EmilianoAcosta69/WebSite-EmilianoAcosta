@@ -20,6 +20,10 @@ body{
 /* Seccion Inicio */
 .sectionInicio{
     background-color: #171717;
+    background-repeat: no-repeat ;
+    background-position: center;
+    
+    background-size:auto;
     text-align: center;
     color: rgb(255, 255, 255);
     padding: 200px;
@@ -28,9 +32,47 @@ body{
     justify-content: center;
     margin: auto;
 }
+.sectionInicio div{
+    padding: 30px;
+}
+.sectionInicio div h1{
+    font-family: monospace;
+    font-size: 33px;
+}
 
-.sectionInicio h2{
+.sectionInicio div .escritura{
     margin-bottom: 50px;
+    width: 900px;
+    animation: escribiendo 6s steps(20) infinite,
+    pleca 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: solid 3px;
+    font-family: monospace;
+    font-size: 33px;
+    margin: auto;
+    
+}
+
+
+@keyframes escribiendo {
+    0%,
+    100%{
+        width: 0;
+    }
+    40%,
+    60%{
+        width: 900px;
+    }
+    90%{
+        width: 0;
+    }
+}
+
+@keyframes pleca{
+    50%{
+        border-color: transparent;
+    }
 }
 
 .sectionInicio a{
@@ -87,7 +129,6 @@ body{
     color: #171717;
     font-size: 30px;
     margin: 5px;
-    background-color: rgb(212, 212, 212);
     padding: 3px;
     border-radius: 5px;
 }
@@ -105,8 +146,8 @@ body{
     text-decoration: none;
     color: rgb(212, 212, 212);
     padding: 5px;
-    font-size: 18px;
-    border-radius: 10px;
+    font-size: 20px;
+    
 }
 
 .sectionSobreMi .datosSobreMi div .cv:hover{
@@ -214,7 +255,7 @@ body{
 
 .sectionContacto{
     background-color: #171717;
-    height: 96vh;
+    height: 97vh;
     width: 100%;
     color: rgb(212, 212, 212);
     text-align: center;
@@ -227,12 +268,12 @@ body{
     align-items: center;
 }
 
-.sectionContacto div form input , textarea{
+.sectionContacto div form input ,.sectionContacto div form textarea {
     width: 400px;
     padding: 10px;
     border-radius: 15px;
     text-align: center;
-    margin: 15px;
+    margin: 10px;
     outline: none;
     border: none;
 }
