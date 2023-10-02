@@ -16,14 +16,13 @@ body{
     background-color: #171717;
 }
 
+.sectionNav ul li .nav-link:hover{
+    color:rgb(194, 193, 193) !important;
+}
 
 /* Seccion Inicio */
 .sectionInicio{
     background-color: #171717;
-    background-repeat: no-repeat ;
-    background-position: center;
-    
-    background-size:auto;
     text-align: center;
     color: rgb(255, 255, 255);
     padding: 200px;
@@ -35,12 +34,18 @@ body{
 .sectionInicio div{
     padding: 30px;
 }
-.sectionInicio div h1{
+.sectionInicio div .titulo{
     font-family: monospace;
     font-size: 33px;
 }
 
-.sectionInicio div .escritura{
+.sectionInicio div .escritura {
+    font-family: monospace;
+    font-size: 33px;
+    padding: 20px;
+}
+
+/* .sectionInicio div .escritura{
     margin-bottom: 50px;
     width: 900px;
     animation: escribiendo 6s steps(20) infinite,
@@ -72,8 +77,8 @@ body{
 @keyframes pleca{
     50%{
         border-color: transparent;
-    }
-}
+    } */
+/* } */
 
 .sectionInicio a{
     border: 1px rgb(212, 212, 212) solid;
@@ -272,7 +277,6 @@ body{
     width: 400px;
     padding: 10px;
     border-radius: 15px;
-    text-align: center;
     margin: 10px;
     outline: none;
     border: none;
@@ -308,4 +312,120 @@ body{
 .sectionFooter span a{
     text-decoration: none;
     color: #fff;
+}
+
+/* Responsive */
+
+@media (max-width: 600px){
+    .sectionInicio{
+        text-align: center;
+        color: rgb(255, 255, 255);
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        padding: 0px;
+    }
+    .sectionInicio div{
+        height: 100%;
+    }
+
+    .sectionInicio div .titulo{
+        margin-top: 100px;
+    }
+    .sectionInicio div .escritura {
+        font-family: monospace;
+        font-size: 33px;
+        padding: 20px;
+    }
+    .sectionInicio a{
+        border: 1px rgb(212, 212, 212) solid;
+        background-color: rgb(255, 255, 255);
+        text-decoration: none;
+        color: #171717;
+        padding: 10px;
+        font-size: 25px;
+        width: 80vw;
+    }      
+
+    .sectionSobreMi{
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+        width: 100%;
+        
+    }
+    
+    .sectionSobreMi .imgSobreMi{
+        width: 0vw;
+        display: none;
+    }
+    
+    .sectionSobreMi .imgSobreMi img{
+        padding: 0px;
+        width: 0px;
+        height: 0px;
+        display: none;
+    }
+    
+    
+    .sectionSobreMi .datosSobreMi{
+        width: 100vw;
+        margin: auto;
+        padding: 50px;
+        
+    }
+    .sectionHabilidades{
+        background-color: #171717;
+        height: 100vh;
+        width: 100%;
+        color: rgb(212, 212, 212);
+        text-align: center;
+    }
+    
+    
+    .sectionHabilidades div .skills{
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        margin: auto;
+        font-size: 20px;
+    }
+    .sectionProyectos div{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    .sectionProyectos div a img{
+        width: 400px;
+        border-radius: 20px;
+        padding: 10px;
+    }
+    
+    
+    .sectionProyectos div a img:hover{
+        width: 400px;
+        opacity: 0.7;
+        
+    }
+    .sectionProyectos div div{
+        flex-direction: column;
+        border-radius:20px;
+        background-color: #171717;
+        margin: 20px;
+    }
+    
+    .sectionProyectos div div div{
+        flex-direction: row;
+        font-size: 30px;
+        justify-content: center;
+        border: #403f3f 0.5px solid;
+    }
+    
+    .sectionProyectos div div div i{
+        padding: 10px;
+        
+    }
+    
+    
 }
