@@ -299,6 +299,9 @@ body{
     color: rgb(212, 212, 212);
 }
 
+#mailSend{
+    opacity: 0;
+}
 
 /* Seccion Footer */
 
