@@ -10,4 +10,5 @@ function handleSubmit(event){
     ${formulario.get('name')} ${formulario.get('email')}
     &body=${formulario.get('message')}`)
     buttonMail.click()
+    formContacto.reset();
 }
